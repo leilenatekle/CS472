@@ -23,7 +23,7 @@ p,ul,ol,h3,a
 
 .moodImages
 {
-    widows: 300px;
+    width: 300px;
     height:350px;
     position: relative;
 }
