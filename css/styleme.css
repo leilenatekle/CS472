@@ -28,4 +28,9 @@ p,ul,ol,h3,a
     height:350px;
     position: relative;
 }
+.logo
+{
+    width: 100px;
+    height: 30px;
+}
 
