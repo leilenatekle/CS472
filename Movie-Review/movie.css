@@ -74,6 +74,7 @@ body
     padding: 8px;
     margin: 10px;
     font-weight: bold;
+    min-height: 30px;
 }
 #pagination
 {
@@ -121,4 +122,8 @@ p
 dl
 {
     padding: 7px;
+}
+.review >img
+{
+    margin-right: 5px;
 }
