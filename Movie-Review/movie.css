@@ -1,10 +1,8 @@
 /* filename: movie.css*/
 /* author: L. Tekle*/
 /* March 2020*/
-/* CSS file for tmnt-html page*/
-/* filename: movie.css*/
-/* author: L. Tekle*/
-/* March 2020*/
+/* This page contains the CSS component for the TMNT movie review page */
+
 
 body
 {
@@ -115,7 +113,12 @@ p
 #validators
 {
     position: fixed;
-     bottom: 0;
-     right: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
 
+}
+dl
+{
+    padding: 7px;
 }
