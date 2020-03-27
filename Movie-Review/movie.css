@@ -52,7 +52,7 @@ body
 #secondBanner
 {
     color: red;
-    font-size: 5vw;
+    font-size: 4vw;
     background-image: url("./Images/rbg.png");
     align-items: center;
     display: flex;
