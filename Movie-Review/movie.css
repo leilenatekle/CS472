@@ -1,10 +1,11 @@
 /* filename: movie.css*/
 /* author: L. Tekle*/
 /* March 2020*/
+/* CSS file for tmnt-html page*/
 
 body
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 
 }
 h1
@@ -66,10 +67,10 @@ body
 .review
 {
     flex-direction: row;
-    background-color: rgba(255, 255, 255, 0.404);
+    background-color: #E8DC9B;
     border: 2px solid grey;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 8px;
     margin: 10px;
     font-weight: bold;
 }
@@ -85,6 +86,7 @@ body
 p img
 {
     float: left;
+    margin-right: 5px;
 }
 #reviewContainer
 {
