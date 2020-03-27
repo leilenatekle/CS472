@@ -1,3 +1,7 @@
+/* filename: movie.css*/
+/* author: L. Tekle*/
+/* March 2020*/
+
 body
 {
     font-family: Arial, Helvetica, sans-serif;
@@ -94,6 +98,7 @@ p img
     position: relative;
     padding-bottom: 0px;
 }
+/*@media query*/
 @media only screen and (max-width: 600px) {
     #container {
         width: 95% !important;
