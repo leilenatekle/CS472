@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formStyle2.css">
+
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <ul>    
+                <li><h3>MUM Golden Dome Market ::: SRM System </h3></li>
+                <li><a href="#"> Products </a></li>
+                <li><a href="#"> Suppliers </a></li>
+
+            <div id="rightHeader">
+                <li>Hello!</li>
+                <li><button>Sign Out</button></li>
+            </div>
+
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <div id=formContainer>
+            <form id="form1">
+                <h4 id="formrHeader"> New Product Form</h4>
+                <div class="form">
+                   <div id="rightForm">  
+                    <div class="gridCont">
+                        <label for="prodNum">Product Number</label>
+                        <input type="text" name="prodNum" id="prodNum">
+                    </div>
+
+                    <div class="gridCont">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <label for="unit">Unit Price</label>
+                    <input type="text" name="unit" id="unit" placeholder="0.0">
+
+                </div>
+                <div id="leftForm"> 
+                    <div class="gridCont">
+                        <label for="quantity">Quantity in Stock</label>
+                        <input type="number" name="quantity" id="quantity" placeholder="0">
+                    </div>
+
+                    <div class="gridCont">
+                        <label for="Supplier">Supplier</label>
+                        <select>
+                            <option value=disabled selected hidden >Select a supplier</option>
+                            <option value="sup1">Supplier one</option>
+                        </select>
+                    </div>
+
+                    <div class="gridCont">
+                        <label for="date">Date supplied</label>
+                        <input type="date" name="date" id="date" >
+                        <small>Enter a valid date</small>
+                    </div>
+
+                    <div class="gridCont">
+                        <input type="reset" id="reset">
+                        <input type="button" value="Cancel" id="cancel">
+                        <input type="submit" value="Add Product" id="prod">
+                    </div>
+                   </div> 
+
+
+            </form>
+        </div>
+    </main>
+    <footer></footer>
 </body>
+
 </html>

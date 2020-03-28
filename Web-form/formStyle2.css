@@ -1,0 +1,155 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(75, 67, 67);
+    padding: 0px;
+
+}
+li
+{
+    border: 2px white solid;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+li:hover
+{
+    background-color: rgb(148, 213, 235);
+}
+/* nav
+{
+    border: none;
+    background-color: rgb(73, 166, 197);
+    padding: 15px;
+    width: 100%;
+    overflow: hidden;
+    align-content: center;
+    margin-top: -10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px grey;
+} */
+ h3, li
+{
+    color: white;
+    display: inline;
+    padding: 14px 16px;
+    text-align: center;
+    padding: 15px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+#rightHeader
+{
+    float: right;
+    margin-right: 10px ;
+}
+button
+{
+    padding: 10px;
+    border-radius: 5px;
+
+}
+#formContainer
+{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+
+}
+#formHeader
+{
+    color: grey;
+}
+input, select
+{
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+small
+{
+    display: block;
+}
+input[type=button], input[type=submit], input[type=reset]
+{
+    width: 100px;
+    background-color: white;
+    margin-right: 10px;
+}
+#reset
+{
+    color: blue;
+    border: 1.5px solid blue;
+
+}
+#cancel
+{
+    color: orangered;
+    border: 1.5px solid orangered;
+}
+#prod
+{
+    color: lightblue;
+    border: 1.5px solid lightblue;
+}
+.form
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+}
+.gridCont
+{
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+label
+{
+    display: block;
+    margin: 5px;
+}
+
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin-right: -13px;
+    padding: 15px;
+    background-color: rgb(73, 166, 197);
+    margin-top: 7px;
+    padding-bottom: 8px;
+    padding-top: 19px;
+}
+li, a
+{
+    display: inline;
+    color: white;
+}
+li:last-child {
+    border-right: none;
+  } 
+nav
+{
+    width: 100%;
+    margin:-6px;
+    /* margin-top:-8px ; */
+    /* margin-left: -20px; */
+
+}
+li:first-child
+{
+    border: none;
+}
+@media screen and (max-width: 1105px) {
+    li {float: none;
+        display: block;
+    }
+  }
