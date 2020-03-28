@@ -33,15 +33,15 @@
                    <div id="rightForm">  
                     <div class="gridCont">
                         <label for="prodNum">Product Number</label>
-                        <input type="text" name="prodNum" id="prodNum">
+                        <input type="text" name="prodNum" id="prodNum" pattern="[0-9]+" required>
                     </div>
 
                     <div class="gridCont">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" pattern="[A-Za-z]*" required>
                     </div>
                     <label for="unit">Unit Price</label>
-                    <input type="text" name="unit" id="unit" placeholder="0.0">
+                    <input type="text" name="unit" id="unit" placeholder="0.0" pattern="[0-9]+\.[0-9]+" required>
 
                 </div>
                 <div id="leftForm"> 
@@ -64,7 +64,7 @@
                         <small>Enter a valid date</small>
                     </div>
 
-                    <div class="gridCont">
+                    <div class="gridCont" id="buttons">
                         <input type="reset" id="reset">
                         <input type="button" value="Cancel" id="cancel">
                         <input type="submit" value="Add Product" id="prod">

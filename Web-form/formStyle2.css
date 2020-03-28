@@ -148,8 +148,15 @@ li:first-child
 {
     border: none;
 }
+#buttons
+{
+    float: right;
+}
 @media screen and (max-width: 1105px) {
-    li {float: none;
+    ul li {float: none;
         display: block;
-    }
+    border-right: none}
+    /* li {float: none;
+        
+    } */
   }
