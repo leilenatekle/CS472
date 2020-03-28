@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formStyle.css">
+    <title>Web-from</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <form>
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+            <small class="form-text text-muted">We'll never share your email with anyone</small></br></br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password should be atleast 10 characters long and should contain at least one number and one uppercase and lowercase letter" required>
+
+            <input type="text" name="website" id="website" placeholder="Enter website"  pattern="https?://.+" title="Include http://" required>
+
+            <input type="checkbox" name="chk"> 
+            <label for="chk" id="chk">Check me out</label> 
+            <input type="submit" name="submit">
+        </form>
+    </main>
+</body>
+</html>
