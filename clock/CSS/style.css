@@ -1,0 +1,48 @@
+/* file-name: style.css
+author: Leilena Tekle */
+
+p{
+    display: inline;
+    font-weight: 900;
+    font-size: xx-large;
+}
+#mainContainer{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-image: linear-gradient(90deg, black, rgb(12, 10, 10) );
+    box-shadow: rgba(44, 2, 2, 0.411) 6px 7px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#clock
+{
+    background-image: linear-gradient(-80deg, rgb(90, 3, 3), rgb(170, 19, 19));
+}
+#clock:hover, #date:hover
+{
+    background-image: linear-gradient(-80deg, rgb(116, 53, 53), rgb(95, 19, 19));
+
+}
+#date{
+    background-image: linear-gradient(-80deg, rgb(117, 9, 9), rgb(71, 0, 0) );
+
+}
+#date, #clock
+{
+    padding: 50px;
+
+}
+body{
+    background-image: linear-gradient(90deg, rgb(58, 11, 11), rgb(102, 10, 10), rgb(102, 10, 10) );
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    margin-top: 100px;
+}

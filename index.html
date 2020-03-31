@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
         <title>My CS472 - WAP Website</title>
     </head>
     <body>
-        <img src="./images/Leilena.jpg" width="200" height="150" alt= "Profile Picture">
-            <h1>Leilena Tekle</h1>
-            <ul>
-                <li><a href="https://leilenatekle.github.io/">W1D1 - Homepage</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="recpie/index.html">Recepie</a></li>
-                <li><a href="./Movie-Review/tmnt.html">Movie Review</a></li>
+        <header>
+                <nav> <img id="profImg" src="./images/Leilena.jpg" width="200" height="150" alt= "Profile Picture">
+                    <h1>Leilena Tekle</h1></nav>
+        </header>
+        <main>
+                <div id="mainContainer">
+                    
+                    <!-- <ul> -->
+                        <div>
+                        <li><a href="https://https://leilenatekle.github.io/cs472/">W1D1 - Homepage</a></li>
+                        <li><a href="aboutme.html">About me</a></li>
+                        <li><a href="recpie/index.html">Recepie</a></li>
+                        </div>
 
-            
-            </ul>
-            <a href="https://validator.w3.org/check/referer"> 
-                <img src="images/W3_logo.png" alt="html validator">
-                </a>
+                        <div>
+                        <li><a href="./Movie-Review/tmnt.html">Movie Review</a></li>
+                        <li><a href="./clock/index.html">Clock</a></li>
+                        <li><a href="./decorateMyText/dcorateMyText.html">Decorate</a></li>
+                        </div>
+
+                    <!-- </ul> -->
+                    
+                </div>
+        </main>
+
+     
              <footer> <!-- This is a footer -->
-        <p>&copy; 2020 Leilena F. Tekle</p>
+        <p id="footerMessage">&copy; 2020 Leilena F. Tekle</p>
+        <div id="validator">
+        <a href="https://validator.w3.org/check/referer"> 
+                        <img src="images/W3_logo.png" alt="html validator">
+                        </a>
+                    </div>
     </footer> 
     </body>
 </html>

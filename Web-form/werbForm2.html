@@ -27,7 +27,7 @@
     </header>
     <main>
         <div id=formContainer>
-            <form id="form1">
+            <form id="form1" onsubmit="displayAlert()">
                 <h4 id="formrHeader"> New Product Form</h4>
                 <div class="form">
                    <div id="rightForm">  
@@ -51,16 +51,16 @@
                     </div>
 
                     <div class="gridCont">
-                        <label for="Supplier">Supplier</label>
-                        <select>
+                        <label for="supplier">Supplier</label>
+                        <select id="supplier">
                             <option value=disabled selected hidden >Select a supplier</option>
-                            <option value="sup1">Supplier one</option>
+                            <option value="Supplier one">Supplier one</option>
                         </select>
                     </div>
 
                     <div class="gridCont">
                         <label for="date">Date supplied</label>
-                        <input type="date" name="date" id="date" >
+                        <input type="date" name="date" id="date">
                         <small>Enter a valid date</small>
                     </div>
 
@@ -76,6 +76,8 @@
         </div>
     </main>
     <footer></footer>
+    <script src="JS/script.js"></script>
+
 </body>
 
 </html>

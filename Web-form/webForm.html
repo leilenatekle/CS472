@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formStyle.css">
+    <script src="JS/script.js"></script>
     <title>Web-from</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
     </header>
     <main>
         <div id="con">
-        <form>
+        <form action="#">
             <label for="email">Email address</label>
             <input type="email" name="email" id="email" placeholder="Enter Email" required>
             <small class="form-text text-muted">We'll never share your email with anyone</small></br></br>
@@ -23,9 +24,10 @@
 
             <input type="checkbox" name="chk"> 
             <label for="chk" id="chk">Check me out</label> 
-            <input type="submit" name="submit">
+            <!-- <input type="submit" name="submit" id="sub"> -->
+            <button id="sub">Submit</button>
         </form>
         <div>
     </main>
 </body>
-</html>
+</html> 

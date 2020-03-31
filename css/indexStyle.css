@@ -1,0 +1,85 @@
+#mainContainer
+{
+    width: 70%;
+    border: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    /* position: absolute; */
+    /* top: 30px; */
+    z-index: -1;
+    margin: auto;
+    box-shadow: 4px 4px grey;
+    background-image: linear-gradient(90deg, #EE4540, #C72C41 );
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    display: grid;
+    grid-template-columns: auto auto ;
+
+}
+
+li
+{
+    list-style-type: none;
+    background-color: rgba(199, 44, 65, 0.705);
+    margin: 10px;
+    padding: 10px;
+
+}
+li:hover
+{
+    background-color: rgba(156, 18, 36, 0.705);
+    font-size: 1.1em;
+}
+nav
+{
+    width: 85%;
+    margin: auto;
+    /* text-align: center; */
+    margin-top: 30px;
+    /* background-color: rgba(53, 49, 49, 0.418); */
+}
+img,h1,#footerMessage
+{
+    display: inline;
+}
+body, a{
+    
+    color: white;
+    text-decoration: none;
+}
+body
+{
+
+    /* background-image: url("/images/homeBG.jpg");
+    background-size: cover; */
+    background-image: linear-gradient(-90deg, #C72C41, #801336, #510A32 );
+    color: white;
+    font-family: "Candara", cursive, sans-serif;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;;
+    width: 100%;
+    background-color: rgba(81, 10, 50, 0.137);
+    padding: 10px;
+    overflow: hidden;
+}
+#validator
+{
+    float: right;
+    margin-right: 20px;
+}
+#profImg {
+    /* border-radius: 160%; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.575), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 150px;
+    width: 167px;
+  }
+h1{
+    float: right;
+    font-size: 3em;
+    
+}

@@ -1,0 +1,25 @@
+h1 {
+    font-size: 200%;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "Impact", fantasy;
+}
+textarea
+{
+    text-align: right;
+}
+.biggerText{
+    font-size: 24em;
+}
+.boldText{
+    font-weight: bold;
+}
+.noDecoration{
+    font-weight: normal;
+}
+.green{
+    color: green;
+}
+.underlined{
+    text-decoration: underline;
+}
