@@ -33,7 +33,7 @@ function maxOFThree(num1, num2, num3) {
 //Question number 3
 function isVowel(character) {
     if (character.length != 1) {
-        return null;
+        return new Error("Invalid input");
     }
     if (character == ('a' || 'e' || 'i' || 'o' || 'u')) {
         return true;
@@ -42,6 +42,23 @@ function isVowel(character) {
         return false;
     }
 }
+//OR
+function isVowel2(ch)
+{
+    let r= false;
+        switch(ch)
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                r=true;
+                break;
+        }
+        return r;
+}
+
 
 //Question numnber 4
 //Sum

@@ -1,10 +1,9 @@
 "use strict";
 
-
-
 window.onload= function()
 {
     setInterval( clockFunction,1000);
+
     dateFunction();
 }
 function dateFunction(){
@@ -37,6 +36,9 @@ function clockFunction(){
         dateFunction();
 
     }
-
+    //setTimeout(clockFunction, 1000);
+    /** setTimeout compared to tge setTimeout function is aonly called once
+     * therefore must be called in the function
+     * */
 
 }
