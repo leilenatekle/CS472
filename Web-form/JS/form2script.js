@@ -3,7 +3,7 @@ window.onload = function(){
 
 
     function displayAlert() {
-        let message = document.getElementById("prodNum").value + ", " + document.getElementById("name").value + ", " + document.getElementById("unit").value + ", " + document.getElementById("supplier").value + ", " + document.getElementById("date").value;
+        let message = $("#prodNum").val() + ", " + $("#name").val()  + ", " + $("#unit").val()  + ", " + $("#supplier").val()  + ", " + $("#date").val() ;
         window.alert(message);
     }
 
@@ -15,14 +15,24 @@ window.onload = function(){
 
 
 //use a submit button
-document.getElementById("form1").addEventListener(
-    "submit",
+// document.getElementById("form1").addEventListener(
+//     "submit",
     
-        function(event){
-            event.preventDefault();
-            displayAlert(); 
-        }
+//         function(event){
+//             event.preventDefault();
+//             displayAlert(); 
+//         }
     
-);
+// );
+
+
+
+$("form").submit(function(){
+    // action goes here!!
+        event.preventDefault();
+        displayAlert();
+  });
+
 
 }
+ 

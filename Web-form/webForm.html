@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formStyle.css">
     <script src="JS/form1script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
     <title>Web-from</title>
 </head>
+
 <body>
     <header>
     </header>
     <main>
         <div id="con">
-        <form  id="formLogin" method="POST">
-            <label for="email">Email address</label>
-            <input type="email" name="email" id="email" placeholder="Enter Email" required>
-            <small class="form-text text-muted">We'll never share your email with anyone</small></br></br>
+            <form id="formLogin" method="POST">
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                <small class="form-text text-muted">We'll never share your email with anyone</small></br></br>
 
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password should be atleast 10 characters long and should contain at least one number and one uppercase and lowercase letter" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Password should be atleast 10 characters long and should contain at least one number and one uppercase and lowercase letter"
+                    required>
 
-            <input type="text" name="website" id="website" placeholder="Enter website"  pattern="https?://.+" title="Include http://" required>
+                <input type="text" name="website" id="website" placeholder="Enter website" pattern="https?://.+"
+                    title="Include http://" required>
 
-            <input type="checkbox" name="chk"> 
-            <label for="chk" id="chk">Check me out</label> 
-            <input type="submit" name="submit" id="sub">
-           <!-- <button id="sub">Submit</button>-->
-        </form>
-        <div>
-    </main> 
+                <input type="checkbox" name="chk">
+                <label for="chk" id="chk">Check me out</label>
+                <input type="submit" name="submit" id="sub">
+                <!-- <button id="sub">Submit</button>-->
+            </form>
+            <div>
+    </main>
 </body>
-</html>  
+
+</html>

@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formStyle2.css">
     <script src="JS/form2script.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
     <title>Product Form</title>
 </head>
 
 <body>
     <header>
-        <nav> 
-            <ul>    
-                <li><h3>MUM Golden Dome Market ::: SRM System </h3></li>
+        <nav>
+            <ul>
+                <li>
+                    <h3>MUM Golden Dome Market ::: SRM System </h3>
+                </li>
                 <li><a href="#"> Products </a></li>
                 <li><a href="#"> Suppliers </a></li>
 
-            <div id="rightHeader">
-                <li>Hello!</li>
-                <li><button>Sign Out</button></li>
-            </div>
+                <div id="rightHeader">
+                    <li>Hello!</li>
+                    <li><button>Sign Out</button></li>
+                </div>
 
-            </ul>    
+            </ul>
         </nav>
     </header>
     <main>
@@ -31,46 +34,46 @@
             <form id="form1" onsubmit="displayAlert()">
                 <h4 id="formrHeader"> New Product Form</h4>
                 <div class="form">
-                   <div id="rightForm">  
-                    <div class="gridCont">
-                        <label for="prodNum">Product Number</label>
-                        <input type="text" name="prodNum" id="prodNum" pattern="[0-9]+" required>
-                    </div>
+                    <div id="rightForm">
+                        <div class="gridCont">
+                            <label for="prodNum">Product Number</label>
+                            <input type="text" name="prodNum" id="prodNum" pattern="[0-9]+" required>
+                        </div>
 
-                    <div class="gridCont">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" pattern="[A-Za-z]*" required>
-                    </div>
-                    <label for="unit">Unit Price</label>
-                    <input type="text" name="unit" id="unit" placeholder="0.0" pattern="[0-9]+\.[0-9]+" required>
+                        <div class="gridCont">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" pattern="[A-Za-z]*" required>
+                        </div>
+                        <label for="unit">Unit Price</label>
+                        <input type="text" name="unit" id="unit" placeholder="0.0" pattern="[0-9]+\.[0-9]+" required>
 
-                </div>
-                <div id="leftForm"> 
-                    <div class="gridCont">
-                        <label for="quantity">Quantity in Stock</label>
-                        <input type="number" name="quantity" id="quantity" placeholder="0">
                     </div>
+                    <div id="leftForm">
+                        <div class="gridCont">
+                            <label for="quantity">Quantity in Stock</label>
+                            <input type="number" name="quantity" id="quantity" placeholder="0">
+                        </div>
 
-                    <div class="gridCont">
-                        <label for="supplier">Supplier</label>
-                        <select id="supplier">
-                            <option value=disabled selected hidden >Select a supplier</option>
-                            <option value="Supplier one">Supplier one</option>
-                        </select>
-                    </div>
+                        <div class="gridCont">
+                            <label for="supplier">Supplier</label>
+                            <select id="supplier">
+                                <option value=disabled selected hidden>Select a supplier</option>
+                                <option value="Supplier one">Supplier one</option>
+                            </select>
+                        </div>
 
-                    <div class="gridCont">
-                        <label for="date">Date supplied</label>
-                        <input type="date" name="date" id="date">
-                        <small>Enter a valid date</small>
-                    </div>
+                        <div class="gridCont">
+                            <label for="date">Date supplied</label>
+                            <input type="date" name="date" id="date">
+                            <small>Enter a valid date</small>
+                        </div>
 
-                    <div class="gridCont" id="buttons">
-                        <input type="reset" id="reset">
-                        <input type="button" value="Cancel" id="cancel">
-                        <input type="submit" value="Add Product" id="prod">
+                        <div class="gridCont" id="buttons">
+                            <input type="reset" id="reset">
+                            <input type="button" value="Cancel" id="cancel">
+                            <input type="submit" value="Add Product" id="prod">
+                        </div>
                     </div>
-                   </div> 
 
 
             </form>

@@ -1,9 +1,10 @@
 window.onload = function(){
     "use strict";
 
-    function display() {
-        console.log(document.getElementById("email").value + " " + document.getElementById("password").value + " " + document.getElementById("website").value);
-    }
+    // function display() {
+    //     console.log(document.getElementById("email").value + " " + document.getElementById("password").value + " " + document.getElementById("website").value);
+
+    // }
 
 
 //usning submit button
@@ -14,14 +15,27 @@ window.onload = function(){
     // });
 
 //use a submit button
-document.getElementById("formLogin").addEventListener(
-    "submit",
+// document.getElementById("formLogin").addEventListener(
+//     "submit",
     
-        function(event){
-            event.preventDefault();
-            display(); 
-        }
+//         function(event){
+//             event.preventDefault();
+//             display(); 
+//         }
     
-);
+// );
+
+//JQUERY
+function display(){
+    
+    console.log($("#email").val() + " " +$("#password").val()+ " " +$("#website").val());
+  }
+
+$("form").submit(function(){
+    // action goes here!!
+        event.preventDefault();
+        display();
+  });
+
 
 }
