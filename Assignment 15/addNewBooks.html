@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Library Management</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/JS/addScript.js"></script>
+    <link rel="stylesheet" href="/css/master.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" class="active">The eLibrary &reg; ::: a CS318 Demo WebApp
+                    project</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Virtual Tour</a></li>
+                <li><a href="books.html">Books</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon"></span> Welcome, Guest</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>New Book Form </h1>
+        <hr>
+        <p><strong>Note:</strong> Form fileds marked with asterisk(*) are required.</p>
+
+        <!-- <form id="addBookForm" method="post"> -->
+        <div class="form-group">
+            <label for="title">*Book Title</label>
+            <input type="text" name="title" id="title" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="isbn">*ISBN</label>
+            <input type="text" name="isbn" id="isbn" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="publisher">*Publisher</label>
+            <input type="text" name="publisher" id="publisher" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="overdue">*Overdue Fee per day</label>
+            <input type="text" name="overdue" id="overdue" placeholder="0.00" class="form-control" pattern="^\d.\d{2}$" required>
+            <small >Enter a valid decimal amount; in dollars and cents; no comma (e.g 1.99) </small>
+        </div>
+        
+        <div class="form-group">
+            <label for="date">*Date Published</label>
+            <input type="date" name="date" id="date" placeholder="mm/dd/yyyy" class="form-control" required>
+        </div>
+        <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+        <button id="btn" class="btn btn-default">Submit</button>
+
+        <button type="reset" class="btn btn-default">Reset</button>
+    <!-- </form> -->
+    </div>
+
+</body>
+
+</html>
